@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details</title>
+    <style>
+      /* General reset for margin, padding, and box-sizing */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* General container for centering content */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Projects Details Page */
+      .project-details {
+        margin-top: 5px;
+        text-align: left;
+      }
+
+      .project-details h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .project-details p {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      /* Back Button Styling */
+      .back-button {
+        background-color: #db2804;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      .back-button:hover {
+        background-color: #ffcc00;
+        color: #003366;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .project-details h2 {
+          font-size: 24px;
+        }
+
+        .project-details p {
+          font-size: 16px;
+        }
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #012738;
+        color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: serif;
+        background: rgb(9, 9, 121);
+        background: linear-gradient(
+          90deg,
+          rgba(9, 9, 121, 1) 0%,
+          rgba(4, 3, 24, 1) 100%,
+          rgba(0, 212, 255, 1) 100%
+        );
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+      }
+
+      header .name {
+        font-size: 35px;
+        font-weight: bold;
+        font-family: math;
+        letter-spacing: 1px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style-type: none;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        transition: color 0.3s;
+        font-family: serif;
+        letter-spacing: 1px;
+      }
+
+      nav ul li a:hover {
+        color: #ffcc00;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: left;
+      }
+
+      .main-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+      }
+
+      .userDesc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+        gap: 20px;
+      }
+
+      .main-content img {
+        max-width: 220px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .main-content .description {
+        flex: 1;
+        margin-left: 20px;
+      }
+
+      .main-content .description h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .main-content .description p {
+        font-size: 25px;
+        line-height: 40px;
+        letter-spacing: 1px;
+      }
+
+      .profilePhoto {
+        border-radius: 0px 100px;
+        margin-right: 50px;
+      }
+
+      .project2 {
+        background-color: white;
+        border-radius: 10px;
+        text-align: left;
+        padding: 30px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        color: #012738;
+        margin-left: 0;
+        text-align: justify;
+        height: 340px;
+        width: 1723px;
+      }
+      .project1 {
+        background-color: white;
+        border-radius: 10px;
+        text-align: left;
+        padding: 30px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        color: #012738;
+        margin-left: 0;
+        text-align: justify;
+        height: 340px;
+        width: 1723px;
+      }
+
+      .nameLink {
+        text-decoration: none;
+        color: white;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        nav ul {
+          flex-direction: column;
+          margin-top: 10px;
+        }
+
+        nav ul li {
+          margin: 10px 0;
+        }
+
+        .main-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .main-content img {
+          max-width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .main-content .description {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="name">
+        <a href="./index.html" class="nameLink">Ujwal D</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./Ujwal_D.pdf">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container project-details">
+      <div class="userDesc">
+        <div class="project1">
+          <h2>Heart Attack Prediction</h2>
+          <p><strong>Technology Used:</strong> Python , MYSQL Database, JavaScript, Flask, HTML, CSS, Bootstrap</p>
+          <p>
+            <strong>Description:</strong><ul><li>Developed a Heart Attack Prediction system using SVM and SVC algorithms, leveraging Flask and Python for backend
+              processing.</li>
+              <li>Integrated a MySQL database for efficient data storage and retrieval, ensuring seamless interaction with the application
+                effectively.</li>
+              <li>Designed a responsive frontend using HTML, CSS, Bootstrap, JavaScript, and jQuery, enhancing user experience
+                and interactivity.</li></ul>
+          </p>
+        </div>
+
+        <div class="project2">
+          <h2>Employee TurnOver Prediction</h2>
+          <p><strong>Technology Used:</strong> Python</p>
+          <p>
+            <strong>Description:</strong> <ul><li>To analyze employee data and predict the likelihood of turnover using machine learning techniques, helping organizations
+              improve retention strategies and workforce stability.</li>
+              <li>Developed predictive models using machine learning algorithms (e.g. Logistic Regression, Random Forest).</li></ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
